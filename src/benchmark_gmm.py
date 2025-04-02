@@ -4,7 +4,11 @@ import gc
 from sklearn.mixture import GaussianMixture
 
 
-def benchmark_gmm(model_name, gmm_obj, X, runs=100):
+def benchmark_gmm(model_name, gmm_obj, X, runs=10):
+    """
+    Benchmark the GMM fitting process.
+    """
+
     times = []
     iterations = []
 
